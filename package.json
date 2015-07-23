@@ -1,0 +1,29 @@
+{
+  "name": "mongoose-reference-validator",
+  "version": "1.0.0",
+  "description": "validator for external reference documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisjohn/mongoose-reference-validator.git"
+  },
+  "keywords": [
+    "mongoose",
+    "reference",
+    "validator",
+    "plugin"
+  ],
+  "author": "John Weis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weisjohn/mongoose-reference-validator/issues"
+  },
+  "homepage": "https://github.com/weisjohn/mongoose-reference-validator#readme",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "mongoose": "^4.0.8"
+  }
+}
