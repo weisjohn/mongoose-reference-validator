@@ -87,9 +87,15 @@ function test() {
                 assert.equal(typeof err.errors, 'object');
                 assert.equal(typeof err.errors.staff, 'object');
                 assert.equal(err.errors.staff.message, 'Path `staff` is required.');
+                cb();
             });
         }
-    ], function() {});
+    ], function() {
+        if (!/node-dev$/.test(process.env._)) {
+            mongoose.disconnect();
+            process.exit(0);
+        }
+    });
 
 }
 
